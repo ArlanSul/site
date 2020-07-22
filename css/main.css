@@ -365,6 +365,7 @@ body {
 .container {
 	max-width: 1150px;
 	margin: 0 auto;
+	padding: 0;
 }
 
 .logo {
@@ -481,7 +482,7 @@ header nav a:active {
 .ad {
 	display: flex;
 	align-items: center;
-	justify-content: space-around;
+	justify-content: space-between;
 	background: #34547A;
 	padding: 70px 0;
 }
@@ -624,4 +625,106 @@ footer p {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+}
+
+@media screen and (max-width: 1170px) {
+	.promo .frame {
+		margin-right: 90px;
+	}
+
+	.container {
+		max-width: 1000px;
+	}
+
+	.skills__item img {
+		width: 400px;
+		height: 300px;
+		padding-top: 30px;
+	}
+
+	.hidden_first {
+		display: none;
+	}
+
+	.logo {
+		margin-right: 350px;
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	.hidden_second {
+		display: none;
+	}
+
+	.skills__item:last-child,
+	.skills__item img {
+		display: none;
+	}
+
+	.no {
+		justify-content: center;
+	}
+}
+
+@media screen and (max-width: 990px) {
+	.promo .frame {
+		margin-right: 30px;
+	}
+}
+
+@media screen and (max-width: 930px) {
+	.logo {
+		margin-right: 270px;
+	}
+
+	.promo .frame {
+		display: none;
+	}
+
+	.promo .cross {
+		padding-left: 150px;
+	}
+}
+
+@media screen and (max-width: 850px) {
+	.hidden_third {
+		display: none;
+	}
+
+	.logo {
+		margin-right: 200px;
+	}
+}
+
+@media screen and (max-width: 760px) {
+	.logo {
+		margin-right: 150px;
+	}
+
+}
+
+@media screen and (max-width: 710px) {
+	.logo {
+		padding-left: 30px;
+	}
+
+	header nav a {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 690px) {
+	.promo .cross {
+		padding-left: 30px;
+	}
+
+	.hidden_fourth {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 570px) {
+	.promo .cross p {
+		width: 400px;
+	}
 }
